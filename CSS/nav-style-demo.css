@@ -1,0 +1,114 @@
+/* Navigation Bar */
+
+nav{
+    /* border: 5px solid purple; */
+    width: 100%;
+    height: 75px;
+    /* line-height: 75px; */
+    padding: 0 40px;
+
+    /* make this stick to the top */
+    position: -webkit-sticky;
+    
+    /* background-color: #a3a3a3; */
+    background-color: black;
+}
+
+nav .h-logo{
+    /* border: 2px solid blue; */
+    float: left;
+    padding-right: 0px;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+nav .h-slogan{
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    /* border: 2px red solid; */
+}
+
+nav .h-slogan p{
+    /* border: 1px solid red; */
+    padding-left: 20px;
+    font-family: Bahnschrift SemiBold;
+    font-size: 25px;
+    color: white;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 1.5px; */
+    /* cursor: pointer; */
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav .navbar li a{
+    /* border: 1px solid yellow; */
+    margin: 0 10px 0 10px ;
+    padding: 0 10px 0 10px;
+    font-family: Bahnschrift SemiBold;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    color: white;
+}
+
+nav .navbar li a:hover{
+    border-bottom: 3.5px red solid;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+/* Search Bar */
+
+nav .h-search{
+    float: right;
+    /* border: 2px red solid; */
+    /* border-radius: 10px; */
+    padding: 0 0px;
+    margin: 0 50px;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+nav .h-search input[type=text]{
+    border-radius: 5px 0 0 5px;
+    padding: 7px;
+    border: none;
+    font-size: 10px;
+    font-family: Bahnschrift SemiBold;
+}
+
+nav .h-search button{
+    float: right;
+    background-color: orange;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    position: relative;
+    padding: 7px;
+    font-family: Bahnschrift SemiBold;
+    border: none;
+    font-size: 10px;
+}
+
+/* Login and Cart section */
+
+nav .h-profile, nav .h-cart{
+    margin: 0 10px;
+    float: right;
+    /* border: 2px red solid; */
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+nav .h-profile img, nav .h-cart img{
+    color: white;
+}
+
+/* Navigation Bar */

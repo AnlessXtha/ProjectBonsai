@@ -5,8 +5,97 @@
     <meta name="description" content="Home page of Bonsai Plant E-commerce">
     <meta name="keywords" content="bonsai, bonsai online, buy bonsai online">
     <meta name="author" content="Aadesh Shrestha">
+    <link rel="stylesheet" href="../CSS/nav-style-demo.css">
+    <link rel="stylesheet" href="../CSS/blog-style.css">
 </head>
 <body>
-    <p>Blog</p>
+    <nav>
+        <div class="h-logo">
+            <a href="index.html">
+                <img src="../images/logo.png" alt="logo" width="50px" height="100%">
+            </a>
+        </div>
+        <div class="h-slogan">
+            <p>Make Your Bonsai Dreams Come True</p>
+            <div class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="HTML/product.html">Products</a></li>
+                    <li><a href="HTML/blog.html">Blog</a></li>
+                    <li><a href="HTML/research.html">Research</a></li>
+                    <li><a href="HTML/aboutus.html">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>    
+            </div>
+        </div>
+
+        <div class="h-cart">
+            <a href="#">
+                <img src="#" alt="cart" width="50px" height="50px">
+            </a>
+        </div>
+        
+        <div class="h-profile">
+            <a href="#">
+                <img src="#" alt="login" width="50px" height="50px">
+            </a>
+        </div>
+
+        <div class="h-search">
+            <form class="search-bar">
+                <input type="text" placeholder="Search for anything">
+                <button>Search</button>
+            </form>
+        </div>
+
+    </nav>  
+
+    <section id="blog">
+        <div class="b-main-title">
+            <h1>Blog</h1>
+        </div>
+        <div class="wrapper">
+            <div class="b-f-blog">
+                <div class="b-f-blog-head">
+                    <h3> What is Bonsai?</h3>
+                </div>
+                <div class="b-f-blog-body">
+                    <div class="b-f-b-img">
+                        <img src="#" alt="bonsai img">
+                    </div>
+                    <div class="b-f-b-para">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam animi sequi quisquam totam, ullam quod iusto commodi, tempore, ad ex illum! Mollitia, quo! Dolorum, odit nisi. Iure fugit deleniti dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, tenetur! Quae est earum voluptatibus quos ratione, odit maiores officiis at laudantium suscipit fuga obcaecati deleniti<span id="dots">...</span><span id="more"> Modi delectus accusantium eveniet alias. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint enim cupiditate minima sapiente sequi libero, dolor ad ullam excepturi quibusdam fugit unde nostrum voluptatem quidem consectetur perferendis at reprehenderit similique.</span></p>
+                        <!-- <button onclick="readMore()" id="rm">Read more</button> -->
+                        <!-- <br>  -->
+                        <!-- button tag is better looking then anchor tag for read more  -->
+                        <a onclick="readMore()" id="rm">Read more </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function readMore() 
+        {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var rmText = document.getElementById("rm");
+        
+            if(dots.style.display == "none")
+            {
+                dots.style.display = "inline";
+                rmText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            }
+            else
+            {
+                dots.style.display = "none";
+                rmText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
 </body>
 </html>

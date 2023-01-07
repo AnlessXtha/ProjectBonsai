@@ -70,6 +70,8 @@ body{
         transition: 0.2s;
     }
 
+    /* Search Bar */
+
     nav .h-search{
         float: right;
         /* border: 2px red solid; */
@@ -101,6 +103,8 @@ body{
         font-size: 10px;
     }
 
+    /* Login and Cart section */
+    
     nav .h-profile, nav .h-cart{
         margin: 0 10px;
         float: right;

@@ -1,0 +1,103 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+.wrapper{
+    width: 85%;
+}
+
+.container{
+    width: 95%;
+}
+
+/* Blog Section */
+
+    #blog{
+        height: 1000px;
+        background-color: rgb(0, 61, 61);
+    }
+
+    .b-main-title{
+        /* border: 2px solid red; */
+        text-align: center;
+        padding: 10px 0 ;
+    }
+
+    .b-main-title h1{
+        font-family: Bahnschrift SemiBold;
+        font-size: 60px;
+    }
+
+    /* First Blog */
+
+    .b-f-blog{
+        background-color: rgb(103, 0, 0);
+        /* border: 2px solid red; */
+        padding: 0 0 10px 0 ;
+    }
+
+    .b-f-blog-head h3{
+        /* border: 2px solid purple; */
+        text-align: center;
+        font-family: Bahnschrift SemiBold;
+        font-size: 40px;
+
+        padding: 10px 0;
+    }
+
+    .b-f-blog-body{
+        padding: 0 50px;
+    }
+
+    .b-f-b-img{
+        background-color: rgb(255, 249, 73);
+        /* border: 1px solid blue; */
+        width: 100%;
+        padding: 0 40px;
+        height: 500px;
+    }
+
+    .b-f-b-para{
+        border: 1px solid green;
+    }
+
+    .b-f-b-para p{
+        /* border: 1px solid yellow; */
+        padding: 20px 0;
+        font-family: Bahnschrift SemiBold;
+        font-size: 15px;
+    }
+
+    #more{
+        display: none;
+    }
+
+    .b-f-b-para button{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+
+        border: none;
+        padding: 15px 20px;
+        text-align: left;
+        text-decoration: none;
+        
+        
+        cursor: pointer;
+    }
+
+    .b-f-b-para a{
+        /* border: 1px solid; */
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+    }
+
