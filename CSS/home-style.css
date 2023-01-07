@@ -16,9 +16,9 @@ body{
         height: 75px;
         /* line-height: 75px; */
         padding: 0 40px;
-        position: fixed;
+        /* position: fixed; makes the div an overlay*/
         /* background-color: #a3a3a3; */
-        background-color: black;
+        background-color: rgb(0, 0, 0);
     }
 
     nav .h-logo{
@@ -72,18 +72,33 @@ body{
 
     nav .h-search{
         float: right;
-        border: 2px red solid;
-        border-radius: 10px;
-        padding: 0 40px;
+        /* border: 2px red solid; */
+        /* border-radius: 10px; */
+        padding: 0 0px;
         margin: 0 50px;
         position: relative;
         top: 50%;
         transform: translate(0,-50%);
     }
+    input[type=text]{
+        border-radius: 5px 0 0 5px;
+        padding: 7px;
+        border: none;
+        font-size: 10px;
+        font-family: Bahnschrift SemiBold;
+    }
 
-    nav .h-search p{
+    button{
+        float: right;
+        background-color: orange;
         color: white;
-        
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        position: relative;
+        padding: 7px;
+        font-family: Bahnschrift SemiBold;
+        border: none;
+        font-size: 10px;
     }
 
     nav .h-profile, nav .h-cart{
@@ -101,3 +116,88 @@ body{
 
 /* Navigation Bar */
 
+/* Banner  */
+
+#banner{
+    /* border: 1px solid pink; */
+    width: 100%;
+    position: relative;
+    background-color: rgb(106, 200, 106);
+    height: 575px;
+    
+}
+
+figure img{
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.wrapper{
+    width: 90%;
+}
+
+/* total Center
+    .tc{
+    display: grid;
+    place-items: center;
+    border: 1px solid red;
+} */
+
+/* About us */
+
+#about-us{
+    height: 300px;
+    background-color: blueviolet;
+    display: grid;
+    place-items: center;
+    /* border: 1px solid red; */
+    
+}
+
+.para{
+    /* border: 1px solid red; */
+    float: left;
+    width: 50%;
+    height: 200px;
+    margin: 30px 0;
+}
+
+.para h1 {
+    font-size: 50px;
+    font-family: Bahnschrift SemiBold;
+    color: aqua;
+    text-align: center;
+}
+
+.para p{
+    font-size: 20px;
+    font-family: Bahnschrift SemiBold;
+    color: aqua;
+    text-align: center;
+}
+
+.img-us{
+    position: relative;
+    /* border: 1px solid red; */
+    float: right;
+    width: 50%;
+    height: 200px;
+    margin: 30px 0;
+}
+
+.img-us img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Featured Products */
+
+#f-products{
+    height: 500px;
+    background-color: yellow;
+}
