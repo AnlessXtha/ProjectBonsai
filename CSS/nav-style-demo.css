@@ -11,7 +11,7 @@ nav{
     position: -webkit-sticky;
     
     /* background-color: #a3a3a3; */
-    background-color: black;
+    background-color: #202020;
 }
 
 nav .h-logo{
@@ -70,7 +70,7 @@ nav .h-search{
     /* border: 2px red solid; */
     /* border-radius: 10px; */
     padding: 0 0px;
-    margin: 0 50px;
+    margin: 0 20px;
     position: relative;
     top: 50%;
     transform: translate(0,-50%);
@@ -102,8 +102,8 @@ nav .h-search button{
 
 /* Login and Cart section */
 
-nav .h-profile, nav .h-cart{
-    margin: 0 10px;
+nav .h-cart{
+    margin-left: 12px;
     float: right;
     /* border: 2px red solid; */
     position: relative;
@@ -117,6 +117,16 @@ nav .h-cart img{
     width: 38px;
     height: 38px;
 }
+
+nav .h-profile{
+    margin: 0 12px;
+    float: right;
+    /* border: 2px red solid; */
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
 
 nav .h-profile img{
     filter: invert(100%);
