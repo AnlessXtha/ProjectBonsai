@@ -1,0 +1,242 @@
+/* Banner  */
+
+#banner{
+    background-color: red;
+    background-image: url('../images/b-banner1\ test.png');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    
+    width: 100%;
+    height: 700px;
+}
+
+.b-text{
+    display: flex;
+    
+}
+.b-text h1{
+    margin-top: 150px;
+    /* -webkit-text-stroke: .5px black; */
+    text-shadow: 2px 2px black;
+    font-family: Brush Script MT;
+    font-size: 150px;
+    color: white;
+}
+
+/* Banner  */
+
+/* Blog */
+
+#blog{
+    /* height: 400px; */
+    /* background-color: white ; */
+    
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    padding: 20px 0;
+    margin: 30px 0;
+}
+
+#blog > *{
+    /* outline: 1px solid red; */
+}
+.para{
+    background-color: #149911;
+    flex-basis: 50%;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    /* border-radius: 50%; */
+}
+
+.para:hover{
+    box-shadow: 2px 2px black;
+}
+
+.para a{
+    text-decoration: none;
+}
+
+.para h1 {
+    font-size: 50px;
+    font-family: Bahnschrift SemiBold;
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.para p{
+    font-size: 20px;
+    font-family: Bahnschrift SemiBold;
+    color: white;
+    padding: 0 20px;
+}
+
+.para .p-second{
+    margin-bottom: 20px;
+}
+
+.img-us{
+    flex-basis: 40%;
+    border: 1px solid red;
+    display: flex;
+}
+
+.img-us img{
+  
+}
+
+/* Blog */
+
+/* Featured Products */
+
+.container{
+    width: 95%;
+}
+
+#f-products{
+    /* height: 500px; */
+    background-color: #149911;
+    border-radius: 20px ;
+    margin: 30px 0;
+    padding: 20px 0;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: 1px solid purple; */
+}
+
+#f-products > *{
+    /* outline: 1px solid red; */
+    
+}
+
+#f-products a{
+    flex-basis: 100%;
+    text-decoration: none;
+}
+
+#f-products h1{
+    font-size: 50px;
+    font-family: Bahnschrift SemiBold;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    /* border: 1px solid red; */
+}
+
+.prod{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid blue; */
+}
+
+.prod > div{
+    padding: 20px 0;
+    /* outline: 1px solid purple; */
+}
+
+.prod a{
+    text-decoration: none;
+}
+
+.prod img{
+    border-radius: 20px;
+}
+
+.glow :hover{
+    box-shadow: 2px 2px 10px 5px #F9E4E4;
+}
+
+.prod p{
+    text-align: center;
+    font-size: 18px;
+    font-family: Bahnschrift SemiBold;
+    color: white;
+
+    /* border: 1px solid red; */
+    padding: 20px 0 0 0;
+}
+
+/* Featured Products */
+
+/* About us */
+
+#about-us{
+    /* height: 500px; */
+    background-color: #149911;
+    /* background-color: white; */
+    border-radius: 20px;
+    margin: 50px 0;
+    padding: 20px 0;
+    
+    /* border: 1px solid red; */
+
+    display: flex;
+    align-items: center;
+}
+
+#about-us > *{
+    outline: 1px solid red;
+}
+
+.a-text{
+    /* border: 1px solid red; */
+    flex-basis: 60%;
+}
+
+.a-text a{
+    text-decoration: none;
+}
+
+
+.a-text h1{
+    font-size: 75px;
+    font-family: Bahnschrift SemiBold;
+    color: white;
+    text-align: center;
+
+   
+    /* border: 1px solid purple; */
+    /* padding: 10px 0; */
+}
+
+.a-text p{
+    font-size: 25px;
+    font-family: Bahnschrift SemiBold;
+    color: white;
+    text-align: center;
+}
+
+.a-img{
+    
+    /* border: 1px solid purple; */
+    flex-basis: 30%;
+    display: flex;
+    
+}
+
+.a-img img{
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+
+/* About us */
+
+/* Testimonials */
+
+#testo{
+    height: 500px;
+    background-color: #149911;
+
+    display: flex;
+}
+
+/* Testimonials */
