@@ -1,162 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+	<link rel="stylesheet" href="../nav and footer/nav-style-only.css">
+    <link rel="stylesheet" href="../nav and footer/footer-style-only.css">
 	<title>trial</title>
 </head>
 <body>
   <style>
-nav{
-        /* outline: 5px solid purple; */
-        width: 100%;
-        height: 75px;
-        /* line-height: 75px; */
-        /* padding: 0 40px; */
-    
-        /* make this stick to the top */
-        position: -webkit-sticky;
-        
-        /* background-color: #a3a3a3; */
-        background-color: white;
-        padding: 0 40px;
-        
-        display: flex;
-        /* justify-content: space-between; */
-    }
-    
-    nav > *{
-        margin: 0;
-        /* border: 2px solid red; */
-        /* outline: 2px solid red; */
-    }
-    
-    .h-logo{
-        /* border: 1px solid red; */
-        display: flex;
-        align-items: center;
-        /* margin-left: 40px; */
-    }
-    
-    .h-slogan{
-        display: flex;
-        flex-wrap: wrap;
-        /* align-items: center; */
-        
-        /* margin-right: 50px; */
-        /* border: 2px solid red; */
-        
-    }
-    .h-slogan > *{
-        flex-basis: 100%;
-    }
-    .h-slogan p{
-        /* border: 1px solid pink; */
-        padding-left: 20px;
-        font-family: Bahnschrift SemiBold;
-        font-size: 25px;
-        color: black;
-    
-        display: flex;
-        align-items: flex-end;
-    }
-    
-    .navbar{
-        /* border: 1px solid blue; */
-        
-    }
-    
-    .navbar li{
-        display: inline-block;
-        /* border: 1px solid orange; */
-        
-    }
-    
-    .navbar a{
-        /* border: 1px solid purple; */
-        margin: 0 10px 0 10px ;
-        padding: 0 10px 0 10px;
-        font-family: Bahnschrift SemiBold;
-        font-size: 15px;
-        text-decoration: none;
-        color: black;
-    
-        display: flex;
-        align-items: flex-start;
-    }
-    
-    /* Search Bar */
-    
-    nav .h-search{
-        display: flex;
-        align-items: center;
-        margin-left: 200px;
-        width: 700px;
-        /* padding: 0 60px; */
-        /* border: 1px solid red; */
-    }
-    
-    nav .h-search input[type=text]{
-        width: 400px;
-        padding: 8px;
-        /* margin: 2px; */
-        font-size: 15px;
-        font-family: Bahnschrift SemiBold;
-        
-        border: 2px solid black;
-        outline: none;
-        border-radius: 20px 0 0 20px;
-    }
-    
-    nav .h-search button{
-        /* float: right; */
-        background-color: orange;
-        color: white;
-        border-radius: 0 20px 20px 0;
-        cursor: pointer;
-        position: relative;
-        padding: 8px;
-        /* margin: 0 ; */
-        font-family: Bahnschrift SemiBold;
-        /* border: none; */
-        font-size: 15px;
-    }
-    
-    /* Search Bar */
-    
-    /* Login and Cart section */
-    
-    nav .h-profile{
-        margin-left: 50px;
-        /* border: 2px red solid; */
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    
-    
-    nav .h-profile img{
-        /* filter: invert(100%); */
-        width: 38px;
-        height: 38px;
-    }
-    
-    nav .h-cart{
-        margin-left: 40px;
-        /* padding: 0 50px; */
-        /* border: 2px red solid; */
-        display: flex;
-        flex-wrap: wrap;
-        justify-items: right;
-        align-items: center;
-    }
-    
-    nav .h-cart img{
-        color: white;
-        /* filter: invert(100%); */
-        width: 38px;
-        height: 38px;
-    }
-/* nav end */
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .flex-container {
 display: flex;
 }
@@ -213,14 +69,10 @@ display: flex;
     display: flex;
     color: rgb(0, 0, 0);
     padding: 15px 32px;
-    /* padding: 10px auto; */
-    height: 40px;
     background-color: rgb(2, 150, 64);
-    /* box-shadow: 10px 10px 10px rgb(74, 77, 70); */
     border-radius: 10px;
     margin-left: 40px;
     margin-right: 20px;
-    /* align-items: center; */
 }
 
 .about{
@@ -246,7 +98,6 @@ display: flex;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: line-through; 
     font-style: italic;
-    /* text-shadow: 5px 5px 5px rgb(78, 78, 78); */
     padding-top: 2px;
 }
 
@@ -257,7 +108,7 @@ display: flex;
     font-size: 25px;
     border-radius: 10px;
     font-weight: bolder;
-    text-align: center;
+    margin-left: 80px;
     }
 
 .Old{
@@ -267,14 +118,16 @@ display: flex;
     text-decoration: line-through;
     color: black;
     text-align: center;
+    margin-left: 30px;
 }
 
 .Percentage {
-    font-size: 22px;
+    font-size: 20px;
     font-style: italic;
     text-decoration: none;
     color: black;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .Price{
     font-size: 25px;
@@ -284,57 +137,50 @@ display: flex;
     font-weight: bolder;
     text-align: center;
 }
-
-/* .container{
-    display: flex;
-    
-} */
-
 </style>
+
+<!-- Navigation Bar -->
 <nav>
     <div class="h-logo">
         <a href="index.html">
-            <img src="images/logo-f.png" alt="logo" width="50px" height="90%">
+            <img src="../nav and footer/logo-f.png" alt="logo" width="50px" height="90%">
         </a>
     </div>
     <div class="h-slogan">
         <p>Make Your Bonsai Dreams Come True</p>
         <div class="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="HTML/product.html">Products</a></li>
-                <li><a href="HTML/blog.html">Blog</a></li>
-                <li><a href="HTML/research.html">Research</a></li>
-                <li><a href="HTML/aboutus.html">About us</a></li>
-                <li><a href="#">Contact us</a></li>
+                <a href="../index.html"><li>Home</li></a>
+                <a href="HTML/product.html"><li class="active">Products</li></a>
+                <a href="HTML/blog.html"><li>Blog</li></a>
+                <a href="HTML/research.html"><li>Research</li></a>
+                <a href="HTML/aboutus.html"><li>About us</li></a>
             </ul>    
         </div>
     </div>
 
     <div class="h-search">
         <form class="search-bar">
-            <input type="text" placeholder="Search for anything">
+            <input type="text" placeholder="Search for Bonsai">
             <button>Search</button>
         </form>
     </div>
     
     <div class="h-profile">
         <a href="#">
-            <img src="images/login-f-100.png" alt="login"  width="50px" height="50px">
+            <img src="../nav and footer/login-f-100.png" alt="login"  width="50px" height="50px">
         </a>
     </div>
     
     <div class="h-cart">
         <a href="#">
-            <img src="images/cart-f-500.png" alt="cart" width="50px" height="50px">
+            <img src="../nav and footer/cart-f-500.png" alt="cart" width="50px" height="50px">
         </a>
     </div>
-    
-
 </nav>
-            <!-- nav end -->
-            <br>
+<!-- End of Navigation Bar -->
 
+    <br>
 	<div class="flex-container">
                 <div class="left-section">
                     <div class = "Picture">
@@ -342,9 +188,10 @@ display: flex;
                     </div>
                 </div>
 
+<!-- Right Section about Azalea Bonsai -->
                 <div class="right-section">
                     <h1 style="font-size: 60px; font-family:Arial, Helvetica, sans-serif;">Azalea Bonsai</h1>
-                    
+                    <br>
                     <p style= "padding-left: 40px; padding-right: 40px; font-family: Arial, Helvetica, sans-serif; text-align: justify;">
                         Azalea is a very beautiful bonsai tree due to its flowers. 
                         They are an evergreen bonsai so even if the Azalea is not in bloom they are just as beautiful. 
@@ -352,25 +199,31 @@ display: flex;
                         Azaleas are available in different flower colors and bloom in late spring. 
                         They typically grow smaller leaves than most bonsai trees which makes them a perfect choice for a bonsai.
                     </p>
-                    
+                    <br>
                     <hr class="horizontal-line">
-                    
+                    <br>
                     <ul class = "about">
                         <p style="text-align: left; padding-left: 40px; font-family: Arial, Helvetica, sans-serif; font-weight: bolder ; font-size: 20px;">Before you buy</p>
                         <li class="point">Soil Type: Needs Moist Soil</li>
                         <li class="point">Placement: Partially Shady Location</li>
                         <li class="point">Fertilizing: Acidic Fertilizer</li>
                     </ul>
+
+                    <!-- Button -->
                     <div class = "buy-now">
-                        <button style="text-align: left; text-decoration: none; font-weight: bold; font-size: 12px; display: inline-block; margin-top: 8px;">Buy Now</button>
+                        <button style="text-align: left; text-decoration: none; font-weight: bold; font-size: 15px; display: inline-block; margin: 8px 0; padding: 8px; cursor: pointer;">Buy Now</button>
+                    <!-- End of Button -->
+
                         <span class = "inline">RS.12000</span>
                         <span style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; font-style: italic;">15% off</span>
                         <span style="font-size: 35px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin-left:20px ;">RS.10200</span>
                     </div>
                 </div>
-                
-    </div>
+    <!-- End Of Right Section about Azalea Bonsai -->
+        </div>
     <br>
+
+    <!-- Other Products -->
     <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">Other Products</h1>
     <br>
     <div>
@@ -407,8 +260,61 @@ display: flex;
                 <a class="Percentage" href="https://www.example.com">15% OFF</a>
                 <a class="Price" href="https://www.example.com">RS.7480</a>
             </div>
+        </div>
     </div>
-</div>
-                    
+<!-- End of Other Products -->
+
+<br>
+
+<!-- Footer -->
+<footer>
+    <div class="fr-logo">
+        <a href="#">
+            <img src="../nav and footer/logo-f.png" alt="logo" width="75px" height="90%">
+        </a>
+    </div>
+    
+    <div class="foot-columns">
+        <div class="column1">
+            <h2>Follow our Socials</h2>
+            <div class="icons">
+                <a href="">
+                    <img src="../nav and footer/fb.png" alt="facebook" style="width: 90px;">
+                </a>
+                <a href="">
+                    <img src="../nav and footer/insta.png" alt="insta" style="width: 90px;">
+                </a>
+                <a href="">
+                    <img src="../nav and footer/tw.png" alt="twitter" style="width: 90px;">
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="column2">
+            <ul>
+                <a href=""><li>Products</li></a>
+                <a href=""><li>Blog</li></a>
+                <a href=""><li>Research</li></a>
+                <a href=""><li>About us</li></a>
+            </ul>
+        </div>
+        <hr>
+        <div class="column3">
+            <h2>Subscribe for the latest news and updates</h2>
+            <div class="col3-mail">
+                <input type="text" placeholder="example@gmail.com">
+            </div>
+            <div class="col3-sub">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="last">
+        <p>Copyright &copy; 2023 Bonzai Company | Terms of Use | Privacy Policy</p>
+    </div>
+</footer>  
+<!-- End of Footer -->
 </body>
 </html>
