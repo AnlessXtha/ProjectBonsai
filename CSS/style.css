@@ -1,24 +1,154 @@
 
-    nav {
+    nav{
+        /* outline: 5px solid purple; */
+        width: 100%;
+        height: 75px;
+        /* line-height: 75px; */
+        /* padding: 0 40px; */
+    
+        /* make this stick to the top */
+        position: -webkit-sticky;
+        
+        /* background-color: #a3a3a3; */
+        background-color: white;
+        padding: 0 40px;
+        
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: lightgray;
-        padding: 10px;
-      }
-      nav ul {
-        display: flex;
-        list-style: none;
+        /* justify-content: space-between; */
+    }
+    
+    nav > *{
         margin: 0;
-        padding: 5px;
-      }
-      nav li {
-        margin: 10px;
-      }
-      nav a {
+        /* border: 2px solid red; */
+        /* outline: 2px solid red; */
+    }
+    
+    .h-logo{
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        /* margin-left: 40px; */
+    }
+    
+    .h-slogan{
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        
+        /* margin-right: 50px; */
+        /* border: 2px solid red; */
+        
+    }
+    .h-slogan > *{
+        flex-basis: 100%;
+    }
+    .h-slogan p{
+        /* border: 1px solid pink; */
+        padding-left: 20px;
+        font-family: Bahnschrift SemiBold;
+        font-size: 25px;
         color: black;
+    
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .navbar{
+        /* border: 1px solid blue; */
+        
+    }
+    
+    .navbar li{
+        display: inline-block;
+        /* border: 1px solid orange; */
+        
+    }
+    
+    .navbar a{
+        /* border: 1px solid purple; */
+        margin: 0 10px 0 10px ;
+        padding: 0 10px 0 10px;
+        font-family: Bahnschrift SemiBold;
+        font-size: 15px;
         text-decoration: none;
-      }
+        color: black;
+    
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    /* Search Bar */
+    
+    nav .h-search{
+        display: flex;
+        align-items: center;
+        margin-left: 200px;
+        width: 700px;
+        /* padding: 0 60px; */
+        /* border: 1px solid red; */
+    }
+    
+    nav .h-search input[type=text]{
+        width: 400px;
+        padding: 8px;
+        /* margin: 2px; */
+        font-size: 15px;
+        font-family: Bahnschrift SemiBold;
+        
+        border: 2px solid black;
+        outline: none;
+        border-radius: 20px 0 0 20px;
+    }
+    
+    nav .h-search button{
+        /* float: right; */
+        background-color: orange;
+        color: white;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+        position: relative;
+        padding: 8px;
+        /* margin: 0 ; */
+        font-family: Bahnschrift SemiBold;
+        /* border: none; */
+        font-size: 15px;
+    }
+    
+    /* Search Bar */
+    
+    /* Login and Cart section */
+    
+    nav .h-profile{
+        margin-left: 50px;
+        /* border: 2px red solid; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    
+    nav .h-profile img{
+        /* filter: invert(100%); */
+        width: 38px;
+        height: 38px;
+    }
+    
+    nav .h-cart{
+        margin-left: 40px;
+        /* padding: 0 50px; */
+        /* border: 2px red solid; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: right;
+        align-items: center;
+    }
+    
+    nav .h-cart img{
+        color: white;
+        /* filter: invert(100%); */
+        width: 38px;
+        height: 38px;
+    }
 
     *{
         margin: auto;
@@ -27,7 +157,7 @@
     }
 
     body{
-        background-color: white;
+        background-color: rgb(255, 255, 255);
     }
    
     h2 { /* Center Text "Products" */
@@ -36,7 +166,7 @@
 
     .text{
         font-family: Arial, Helvetica, sans-serif;
-        color: black;
+        color: rgb(0, 0, 0);
     }
 
     #offer{
@@ -49,10 +179,12 @@
 
     .container{
         width: 90%;
+        background-color: lightcoral;
     }
 
     .wrapper{
         width: 95%;
+        font-size: 25px;
     }
 
     .o-text{
@@ -60,6 +192,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        
     }
     
     .o-text h1{
@@ -77,26 +210,86 @@
     .container2{
         max-width: 1200px;
         margin: auto;
-        background-color: rgba(255, 255, 255, 0.564);
+        background-color: rgb(255, 255, 255);
         overflow:auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
-    .gallery{
-        margin:5px; 
-        border:1px solidcolor;
-        float:left;
-        padding: 15px;
-        width:390px
+    .gallery{    
+        width: 360px;
+        height: 280px;
+        border: 1px solid black;
+        overflow: hidden;
+        text-align: center;
+        margin-bottom: 20px;
+        margin: 20px; 
     }
     
     .gallery img{
         width: 100%;
         height: auto;
+        padding: 10px;
+    }
+    .gallery:hover{
+        transform: scale(1.1);
     }
     .desc{
         padding: 15px;
         text-align: center;
+        color: black;
     }
-
+    .box{
+        text-align: center;
+        text-decoration: none;
+        /* width: 400px;  */
+        padding: 8px; 
+        padding-top: 3px;
+        background-color: white; 
+        color: rgb(0, 0, 0); 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .box2 {
+        
+        text-decoration: none;
+        width: 400px; 
+        padding: 8px; 
+        padding-top: 3px;
+        background-color: white; 
+        color: rgb(0, 0, 0); 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-decoration: line-through;
+        
+    }
+    .box3 {
+        
+        text-decoration: none;
+        width: 400px; 
+        padding: 8px; 
+        padding-top: 3px;
+        background-color: white; 
+        color: rgb(0, 0, 0); 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-style: italic;
+    }
+    .box4 {
+        
+        text-decoration: none;
+        width: 400px; 
+        padding: 8px; 
+        padding-top: 3px;
+        
+        background-color: white; 
+        color: rgb(0, 0, 0); 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    
     /* Footer CSS */
     footer{
         padding: 10px;
