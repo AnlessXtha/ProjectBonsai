@@ -361,11 +361,11 @@ footer{
 }
 
 .icons a img{
-    transition: .25s;
+    transition: .4s;
 }
 
 .icons a img:hover{
-    transform: scale(1.1);
+    transform: scale(1.25);
 }
 
 .icons>*{
