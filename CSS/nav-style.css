@@ -1,0 +1,140 @@
+/* Navigation Bar */
+
+nav{
+    /* border: 5px solid purple; */
+    width: 100%;
+    height: 75px;
+    /* line-height: 75px; */
+    padding: 0 40px;
+
+    /* make this stick to the top */
+    position: -webkit-sticky;
+    
+    /* background-color: #a3a3a3; */
+    background-color: white;
+}
+
+nav .h-logo{
+    /* border: 2px solid blue; */
+    float: left;
+    padding-top: 5px;
+    padding-right: 0px;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+nav .h-slogan{
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    border: 2px red solid;
+}
+
+nav .h-slogan p{
+    /* border: 1px solid red; */
+    padding-left: 20px;
+    font-family: Bahnschrift SemiBold;
+    font-size: 25px;
+    color: black;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 1.5px; */
+    /* cursor: pointer; */
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav .navbar li a{
+    /* border: 1px solid yellow; */
+    margin: 0 10px 0 10px ;
+    padding: 0 10px 0 10px;
+    font-family: Bahnschrift SemiBold;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    color: black;
+}
+
+nav .navbar li a:hover{
+    border-bottom: 3.5px black solid;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+/* Search Bar */
+
+nav .h-search{
+    float: right;
+    /* border: 2px red solid; */
+    /* border-radius: 10px; */
+    padding: 0 0px;
+    margin: 0 20px;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+nav .h-search input[type=text]{
+    width: 400px;
+    padding: 8px;
+    /* margin: 2px; */
+    font-size: 15px;
+    font-family: Bahnschrift SemiBold;
+    
+    border: 2px solid black;
+    outline: none;
+    border-radius: 20px 0 0 20px;
+}
+
+nav .h-search button{
+    float: right;
+    background-color: orange;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    /* margin: 1px 0; */
+    font-family: Bahnschrift SemiBold;
+    border: 2px solid transparent;
+    font-size: 15px;
+}
+
+/* Login and Cart section */
+
+nav .h-cart{
+    margin-left: 12px;
+    float: right;
+    /* border: 2px red solid; */
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+nav .h-cart img{
+    color: white;
+    /* filter: invert(100%); */
+    width: 38px;
+    height: 38px;
+}
+
+nav .h-profile{
+    margin: 0 12px;
+    float: right;
+    /* border: 2px red solid; */
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+
+nav .h-profile img{
+    /* filter: invert(100%); */
+    width: 38px;
+    height: 38px;
+}
+
+/* Navigation Bar */
