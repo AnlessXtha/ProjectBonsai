@@ -418,7 +418,7 @@
     <!-- JavaScript for Timer -->
     <script>
         // The offers ends in Feburary 5
-        var countDownDate = new Date("Feb 5, 2023 24:00:00").getTime();
+        var countDownDate = new Date("Feb 14, 2023 24:00:00").getTime();
 
         // Changes the timer every second
         var x = setInterval(function () {
@@ -436,10 +436,9 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the result in the element with id="timer"
-            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-            // If the countdown is complete
+            // When the countdown is complete
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("timer-text").innerHTML = "Offer has ended.";
