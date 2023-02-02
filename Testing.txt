@@ -1,4 +1,0 @@
-nav bar hover 
-form validation in customer feedback dorm
-checking internal and external link
-texting read more butoon in the blog page
